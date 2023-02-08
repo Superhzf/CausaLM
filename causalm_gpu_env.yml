@@ -22,6 +22,7 @@ dependencies:
   - xz=5.2.4=h14c3975_4
   - zlib=1.2.11=h7b6447c_3
   - nvidia-apex=0.1=py37hed6fefa_1
+  - spacy-model-en_core_web_lg=2.2.5=py_0
   - pip:
     - absl-py==0.8.1
     - altair==3.2.0
@@ -49,7 +50,6 @@ dependencies:
     - decorator==4.4.1
     - defusedxml==0.6.0
     - docutils==0.15.2
-    - en-core-web-lg==2.2.5
     - entrypoints==0.3
     - enum-compat==0.0.3
     - fastrlock==0.4
