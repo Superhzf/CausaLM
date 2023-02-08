@@ -20,10 +20,10 @@ dependencies:
   - wheel=0.33.6=py37_0
   - xz=5.2.4=h14c3975_4
   - zlib=1.2.11=h7b6447c_3
+  - apex=0.1=py37hed6fefa_1
   - pip:
     - absl-py==0.8.1
     - altair==3.2.0
-    - apex==0.1
     - argh==0.26.2
     - astor==0.8.0
     - attrs==19.3.0
