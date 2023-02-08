@@ -21,9 +21,9 @@ dependencies:
   - wheel=0.33.6=py37_0
   - xz=5.2.4=h14c3975_4
   - zlib=1.2.11=h7b6447c_3
+  - cupy=7.0.0=py37he57b8b9_2
   - nvidia-apex=0.1=py37hed6fefa_1
   - spacy-model-en_core_web_lg=2.2.5=py_0
-  - cupy=7.0.0=py37he57b8b9_2
   - pip:
     - absl-py==0.8.1
     - altair==3.2.0
