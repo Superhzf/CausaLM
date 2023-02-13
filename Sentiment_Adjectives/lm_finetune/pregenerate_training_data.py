@@ -3,10 +3,9 @@ from pathlib import Path
 from tqdm import tqdm, trange
 from tempfile import TemporaryDirectory
 import shelve
-
 import sys
-import path
-directory = path.path(__file__).abspath()
+import os
+directory = os.path(__file__).abspath()
 sys.path.append(directory.parent.parent)
 
 from constants import BERT_PRETRAINED_MODEL, SENTIMENT_ADJECTIVES_PRETRAIN_DATA_DIR, \
