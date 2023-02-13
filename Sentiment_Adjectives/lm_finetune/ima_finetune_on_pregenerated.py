@@ -14,8 +14,6 @@ from tqdm import tqdm
 
 from transformers import BertConfig
 
-from utils import init_logger
-
 from transformers.tokenization_bert import BertTokenizer
 from transformers.optimization import AdamW, get_linear_schedule_with_warmup
 
@@ -24,6 +22,7 @@ import sys
 parent = "/work/LAS/cjquinn-lab/zefuh/CausaLM/CausaLM"
 sys.path.append(parent)
 
+from utils import init_logger
 from BERT.bert_text_dataset import BertTextDataset
 from BERT.bert_pos_tagger import BertTokenClassificationDataset
 from constants import BERT_PRETRAINED_MODEL, RANDOM_SEED, SENTIMENT_ADJECTIVES_PRETRAIN_DATA_DIR, SENTIMENT_ADJECTIVES_PRETRAIN_IMA_DIR, NUM_CPU
