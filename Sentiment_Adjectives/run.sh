@@ -12,4 +12,4 @@ module load miniconda3/4.10.3-svrr7oe
 
 source activate causalm
 
-python test_env.py
+python lm_finetune/pregenerate_training_data.py
