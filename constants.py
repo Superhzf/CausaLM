@@ -1,7 +1,8 @@
 from os import path
 from utils import count_num_cpu_gpu
 
-CAUSALM_DIR = path.dirname(path.realpath(__file__)) # This must be set to the path which specifies where the CausaLM project resides
+# CAUSALM_DIR = path.dirname(path.realpath(__file__)) # This must be set to the path which specifies where the CausaLM project resides
+CAUSALM_DIR = '/work/LAS/cjquinn-lab/zefuh/CausaLM/CausaLM' # This must be set to the path which specifies where the CausaLM project resides
 
 NUM_CPU = count_num_cpu_gpu()[0]
 NUM_GPU = 1
