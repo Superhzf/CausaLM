@@ -6,7 +6,7 @@ import shelve
 import sys
 
 parent = "/work/LAS/cjquinn-lab/zefuh/CausaLM/CausaLM"
-sys.path.append(directory.parent.parent)
+sys.path.append(parent)
 
 from constants import BERT_PRETRAINED_MODEL, SENTIMENT_ADJECTIVES_PRETRAIN_DATA_DIR, \
     MAX_SENTIMENT_SEQ_LENGTH, NUM_CPU, SENTIMENT_ADJECTIVES_DATASETS_DIR
