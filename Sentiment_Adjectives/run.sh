@@ -15,6 +15,6 @@ source activate causalm
 # Generate JSON files in Models folder in the project root directory
 # python lm_finetune/pregenerate_training_data.py
 
-python lm_finetune/./lm_finetune/mlm_finetune_on_pregenerated.py
+python lm_finetune/mlm_finetune_on_pregenerated.py
 
 source deactivate
