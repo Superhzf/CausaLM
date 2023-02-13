@@ -12,6 +12,9 @@ module load miniconda3/4.10.3-svrr7oe
 
 source activate causalm
 
-python lm_finetune/pregenerate_training_data.py
+# Generate JSON files in Models folder in the project root directory
+# python lm_finetune/pregenerate_training_data.py
+
+python lm_finetune/./lm_finetune/mlm_finetune_on_pregenerated.py
 
 source deactivate
