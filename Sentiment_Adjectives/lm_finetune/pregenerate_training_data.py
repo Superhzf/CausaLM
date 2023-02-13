@@ -3,8 +3,12 @@ from pathlib import Path
 from tqdm import tqdm, trange
 from tempfile import TemporaryDirectory
 import shelve
+
 import sys
-from ... import constants
+import path
+directory = path.path(__file__).abspath()
+sys.path.append(directory.parent.parent)
+
 from constants import BERT_PRETRAINED_MODEL, SENTIMENT_ADJECTIVES_PRETRAIN_DATA_DIR, \
     MAX_SENTIMENT_SEQ_LENGTH, NUM_CPU, SENTIMENT_ADJECTIVES_DATASETS_DIR
 from datasets.utils import TOKEN_SEPARATOR, ADJ_POS_TAGS, MASK_TOKEN, CLS_TOKEN, SEP_TOKEN, WORDPIECE_PREFIX, \
