@@ -6,7 +6,7 @@
 #SBATCH --partition=gpu
 #SBATCH --gres=gpu:rtx_6000:1
 
-cd /work/LAS/cjquinn-lab/zefuh/CausaLM/CausaLM
+cd /work/LAS/cjquinn-lab/zefuh/CausaLM/CausaLM/Sentiment_Adjectives
 
 module load miniconda3/4.10.3-svrr7oe
 
