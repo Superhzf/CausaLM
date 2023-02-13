@@ -1,3 +1,8 @@
+import sys
+
+parent = "/work/LAS/cjquinn-lab/zefuh/CausaLM/CausaLM"
+sys.path.append(parent)
+
 from constants import SENTIMENT_EXPERIMENTS_DIR, MAX_SENTIMENT_SEQ_LENGTH, SENTIMENT_ADJECTIVES_PRETRAIN_IMA_DIR, \
     SENTIMENT_ADJECTIVES_DATASETS_DIR
 from pytorch_lightning import Trainer

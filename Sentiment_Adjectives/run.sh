@@ -18,6 +18,9 @@ source activate causalm
 # Generate model bin files in Models folder
 # python lm_finetune/mlm_finetune_on_pregenerated.py
 
-python lm_finetune/ima_finetune_on_pregenerated.py --control_task
+# Generate model bin files in Models folder
+# python lm_finetune/ima_finetune_on_pregenerated.py --control_task
+
+python pipeline/training.py --pretrained_control
 
 conda deactivate
