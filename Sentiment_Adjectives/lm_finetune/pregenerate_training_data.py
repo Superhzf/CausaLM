@@ -4,8 +4,8 @@ from tqdm import tqdm, trange
 from tempfile import TemporaryDirectory
 import shelve
 import sys
-import os
-directory = os.path(__file__).abspath()
+
+parent = "/work/LAS/cjquinn-lab/zefuh/CausaLM/CausaLM"
 sys.path.append(directory.parent.parent)
 
 from constants import BERT_PRETRAINED_MODEL, SENTIMENT_ADJECTIVES_PRETRAIN_DATA_DIR, \
