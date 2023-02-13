@@ -17,4 +17,4 @@ source activate causalm
 
 python lm_finetune/mlm_finetune_on_pregenerated.py
 
-source deactivate
+conda deactivate
