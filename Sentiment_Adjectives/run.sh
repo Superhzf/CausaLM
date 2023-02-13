@@ -15,6 +15,9 @@ source activate causalm
 # Generate JSON files in Models folder in the project root directory
 # python lm_finetune/pregenerate_training_data.py
 
-python lm_finetune/mlm_finetune_on_pregenerated.py
+# Generate model bin files in Models folder
+# python lm_finetune/mlm_finetune_on_pregenerated.py
+
+python lm_finetune/ima_finetune_on_pregenerated.py --control_task
 
 conda deactivate
