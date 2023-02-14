@@ -245,7 +245,7 @@ class BertTokenClassificationDataset(BertTextDataset):
             orig_text_tokens = orig_text
         elif type(orig_text) is str:
             orig_text_tokens = orig_text.split(TOKEN_SEPARATOR)
-
+        #zefu: minus 1 because in aligned_labels the token has already had a label.
         tokenizer_adds = [len(bert_tokenizer.tokenize(token)) - 1 for token in orig_text_tokens]
         aligned_labels = list(orig_labels)
         assert len(tokenizer_adds) == len(orig_labels)
