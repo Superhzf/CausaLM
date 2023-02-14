@@ -12,7 +12,7 @@ module load miniconda3/4.10.3-svrr7oe
 
 source activate causalm
 
-python test_env.py
+# python test_env.py
 
 # Generate JSON files in Models folder in the project root directory
 # python lm_finetune/pregenerate_training_data.py

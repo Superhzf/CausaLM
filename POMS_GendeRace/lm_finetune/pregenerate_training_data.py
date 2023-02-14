@@ -332,6 +332,7 @@ def main():
                 group_df = group_df[group_df[group_treatment_column].notnull()]
                 unique_ids = group_df[group_id]
                 documents = group_df[f"Sentence_{group}"].apply(tokenizer.tokenize)
+                # Looks like sth is wrong. In the given dataset, Gender_F_label or Race_F_label is already 0/1
                 genderace_labels = group_df[group_treatment_column].apply(lambda t: int(str(t) == treatment_condition))
                 for doc, label, unique_id in tqdm(zip(documents, genderace_labels, unique_ids)):
                     if doc:
