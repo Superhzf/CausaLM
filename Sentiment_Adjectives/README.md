@@ -15,6 +15,6 @@ Run the following scripts in sequence:
 This will save the intervened BERT language model which treats for Adjectives treatment (IMA), with the option of adding the PoS tagging control task.
 
 ### Stage 3 training and test
-- `./pipeline/training.py [--pretrained_control]`. Zefu: This takes more than 3 hours.
+- `./pipeline/training.py [--pretrained_control]`. Zefu: This takes more than 8 hours.
 
 This will train and test all the Sentiment classifiers for the full experimental pipeline for Adjectives treatment, with the option of utilizing the Stage 2 model which employs the PoS tagging control task.
