@@ -130,6 +130,8 @@ class BertPretrainedClassifier(nn.Module):
             bert = BertModel.from_pretrained(bert_pretrained_model, state_dict=fine_tuned_state_dict)
         else:
             bert = BertModel.from_pretrained(bert_pretrained_model)
+        # Zefu: This two lines code show that wo do not want to change the parameters in the bert model
+        # only the parameters in the classification layers change.
         for p in bert.parameters():
             p.requires_grad = False
         return bert
